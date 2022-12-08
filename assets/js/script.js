@@ -24,23 +24,9 @@ document.addEventListener('keydown', function(event) {
     }
 })
 
-div1 = document.getElementById("div_1");
-div2 = document.getElementById("div_2");
-div3 = document.getElementById("div_3");
-div4 = document.getElementById("div_4");
-
-div1.addEventListener("click", function() {
-    div1.style.backgroundColor = color;
-})
-
-div2.addEventListener("click", function() {
-    div2.style.backgroundColor = color;
-})
-
-div3.addEventListener("click", function() {
-    div3.style.backgroundColor = color;
-})
-
-div4.addEventListener("click", function() {
-    div4.style.backgroundColor = color;
+document.addEventListener('click', function(event) {
+    if (event.target.id != "ele1") {
+        let currentDiv = document.querySelector("#" + event.target.id)
+        currentDiv.style.backgroundColor = color;
+    }    
 })
