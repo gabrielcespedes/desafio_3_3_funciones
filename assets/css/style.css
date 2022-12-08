@@ -1,0 +1,13 @@
+#ele1 {
+    border: solid 1px black;
+    height: 20vh;
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+#div_1, #div_2, #div_3, #div_4 {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    display: inline-block;   
+}
